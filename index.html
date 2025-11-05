@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ener-GE - Solusi Energi Terbarukan</title>
+    <meta name="description" content="Solusi energi terbarukan terbaik dengan panel surya, turbin angin, dan pembangkit air untuk masa depan yang berkelanjutan">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span>Ener-GE</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#beranda">Beranda</a>
+                    <a href="#tentang">Tentang</a>
+                    <a href="#produk">Produk</a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section id="beranda" class="hero-carousel">
+        <div class="hero-slide active">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&h=900&fit=crop" alt="Energi Surya">
+            <div class="hero-content">
+                <h1>Energi Surya</h1>
+                <p>Masa Depan Energi Bersih</p>
+                <button class="hero-btn">Pelajari Lebih Lanjut</button>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=1600&h=900&fit=crop" alt="Energi Angin">
+            <div class="hero-content">
+                <h1>Energi Angin</h1>
+                <p>Kekuatan Alam untuk Kehidupan</p>
+                <button class="hero-btn">Pelajari Lebih Lanjut</button>
+            </div>
+        </div>
+        <div class="hero-slide">
+            <div class="hero-overlay"></div>
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1600&h=900&fit=crop" alt="Energi Air">
+            <div class="hero-content">
+                <h1>Energi Air</h1>
+                <p>Solusi Berkelanjutan</p>
+                <button class="hero-btn">Pelajari Lebih Lanjut</button>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="hero-arrow hero-arrow-left" onclick="changeSlide(-1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+        <button class="hero-arrow hero-arrow-right" onclick="changeSlide(1)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+
+        <!-- Dots Indicator -->
+        <div class="hero-dots">
+            <button class="hero-dot active" onclick="goToSlide(0)"></button>
+            <button class="hero-dot" onclick="goToSlide(1)"></button>
+            <button class="hero-dot" onclick="goToSlide(2)"></button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produk" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Produk Energi Kami</h2>
+                <p>Solusi energi terbarukan terbaik untuk masa depan yang berkelanjutan</p>
+            </div>
+
+            <div class="products-slider-wrapper">
+                <button class="slider-arrow slider-arrow-left" onclick="scrollProducts(-1)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <div class="products-slider" id="productsSlider">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400&h=300&fit=crop" alt="Panel Surya">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Panel Surya</h3>
+                            <p>Sistem panel surya berkualitas tinggi untuk energi bersih</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&h=300&fit=crop" alt="Turbin Angin">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Turbin Angin</h3>
+                            <p>Turbin angin modern dengan efisiensi maksimal</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1548337138-e87d889cc369?w=400&h=300&fit=crop" alt="Pembangkit Air">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Pembangkit Air</h3>
+                            <p>Solusi pembangkit listrik tenaga air yang handal</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Penyimpanan Energi">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Penyimpanan Energi</h3>
+                            <p>Sistem penyimpanan energi terdepan</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=300&fit=crop" alt="Smart Grid">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Smart Grid</h3>
+                            <p>Teknologi jaringan listrik pintar</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=400&h=300&fit=crop" alt="Energi Biomassa">
+                            <div class="product-overlay"></div>
+                        </div>
+                        <div class="product-content">
+                            <h3>Energi Biomassa</h3>
+                            <p>Pemanfaatan biomassa untuk energi terbarukan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-arrow slider-arrow-right" onclick="scrollProducts(1)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- More About Company -->
+                <div class="footer-column">
+                    <h3>More About Company</h3>
+                    <p class="footer-description">
+                        Ener-GE adalah perusahaan penyedia solusi energi terbarukan terdepan di Indonesia. 
+                        Kami berkomitmen untuk menciptakan masa depan yang lebih hijau dan berkelanjutan 
+                        melalui teknologi energi bersih yang inovatif.
+                    </p>
+                    <p class="footer-ceo">Patrick Vicenty, CEO</p>
+                </div>
+
+                <!-- Keep Connected -->
+                <div class="footer-column">
+                    <h3>Keep Connected</h3>
+                    <div class="footer-social-list">
+                        <a href="#" class="social-link facebook">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="white">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </div>
+                            <span>Like us on Facebook</span>
+                        </a>
+                        <a href="#" class="social-link twitter">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="white">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </div>
+                            <span>Follow us on Twitter</span>
+                        </a>
+                        <a href="#" class="social-link google">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="white">
+                                    <path d="M12.545,12.151L12.545,12.151c0,1.054,0.855,1.909,1.909,1.909h3.536c-0.607,1.972-2.101,3.467-4.26,3.467c-2.624,0-4.747-2.124-4.747-4.747s2.124-4.747,4.747-4.747c1.095,0,2.101,0.366,2.901,0.995l2.196-2.196c-1.491-1.359-3.467-2.196-5.097-2.196c-4.748,0-8.612,3.864-8.612,8.612s3.864,8.612,8.612,8.612c4.748,0,8.612-3.864,8.612-8.612c0-0.606-0.061-1.211-0.182-1.818H12.545z"/>
+                                </svg>
+                            </div>
+                            <span>Add us on Google Plus</span>
+                        </a>
+                        <a href="#" class="social-link dribbble">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="white">
+                                    <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z"/>
+                                </svg>
+                            </div>
+                            <span>Follow us on Dribbble</span>
+                        </a>
+                        <a href="#" class="social-link pinterest">
+                            <div class="social-icon">
+                                <svg viewBox="0 0 24 24" fill="white">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
+                                </svg>
+                            </div>
+                            <span>Follow us on Pinterest</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-column">
+                    <h3>Contact Information</h3>
+                    <div class="footer-contact-info">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="white">
+                                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                            </svg>
+                            <div>
+                                <p>The company name</p>
+                                <p class="contact-detail">Lorem ipsum dolor,</p>
+                                <p class="contact-detail">Glassgow Dr 40 Fe 72.</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="white">
+                                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                            </svg>
+                            <div>
+                                <p class="contact-detail">1234567890</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="white">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <div>
+                                <p class="contact-detail">contact@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2016 Simple Footer Widget. All Rights Reserved | Design by W3layouts</p>
+                <div class="footer-legal">
+                    <a href="#">Company Information</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="landing.js"></script>
+</body>
+</html>
